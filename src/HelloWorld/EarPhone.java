@@ -4,13 +4,17 @@ import java.util.*;
 public class EarPhone {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("任意の文字列を入力してください");
-        String str = scanner.next();
-        int strLength = str.length();
+        int strLength;
+        String strInput;
+        do {
+            System.out.println("任意の文字列を入力してください");
+            strInput = scanner.next();
+            strLength = strInput.length();
+        } while (strLength < 2);
         String[] earPhone = new String[strLength];
 
         for(int i = 0; i < strLength; i++){
-            earPhone[i] = str.substring(i, i + 1);
+            earPhone[i] = strInput.substring(i, i + 1);
         }
 
         StringBuilder builder = new StringBuilder();
