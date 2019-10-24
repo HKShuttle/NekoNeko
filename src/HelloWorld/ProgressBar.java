@@ -1,17 +1,18 @@
 package HelloWorld;
 
 public class ProgressBar {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         for(int i = 0; i < 10; i++){
             countProgress();
         }
     }
 
-    private static void countProgress() {
+    private static void countProgress() throws InterruptedException {
         int j = 0;
-        while(j < Integer.MAX_VALUE) {
-            if(j % (Integer.MAX_VALUE / 64) == 0){
-                System.out.print("■");
+        while(j < (Integer.MAX_VALUE / 2)) {
+            if(j % (Integer.MAX_VALUE / 32) == 0){
+                System.out.print("#");
+                Thread.sleep(50);
             }
             j++;
         }
