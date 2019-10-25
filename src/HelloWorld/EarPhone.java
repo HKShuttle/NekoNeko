@@ -8,6 +8,7 @@ public class EarPhone {
         System.out.println("任意の文字列を入力してください");
         String strInput = scanner.next();
         System.out.println(earPhone(strInput));
+        scanner.close();
     }
 
     private static String earPhone(String s) {
