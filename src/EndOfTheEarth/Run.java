@@ -16,6 +16,7 @@ public class Run {
         System.out.println(ConstOfGen.CONSOLE_4);
         String inputD = scan.next();
         System.out.println();
+        scan.close();
 
         Generate.generate(inputA, inputB, inputC, inputD, inputN);
         for(int i = 0; i < 3; i++){
