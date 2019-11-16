@@ -12,30 +12,30 @@ public class Equation {
             return;
         }
         if(discriminant > 0){
-            double[] result = isPositive(a, b, c);
+            double[] result = isPositive(a, b);
             System.out.println("-------------------------");
             System.out.println("実数解: x = ( " + result[0] + ", " + result[1] + ")");
             System.out.println("-------------------------");
         } else if (discriminant == 0){
             System.out.println("-------------------------");
-            System.out.println("重解: x = " + isZero(a, b, c));
+            System.out.println("重解: x = " + isZero(a, b));
             System.out.println("-------------------------");
         } else {
             System.out.println("-------------------------");
-            System.out.println("虚数解: x = " + isNegative(a, b, c));
+            System.out.println("虚数解: x = " + isNegative(a, b));
             System.out.println("-------------------------");
         }
     }
-    private static double[] isPositive(double a, double b, double c){
+    private static double[] isPositive(double a, double b){
         double[] result = new double[2];
         result[0] = (- b +  Math.sqrt(discriminant)) / 2 * a;
         result[1] = (- b -  Math.sqrt(discriminant)) / 2 * a;
         return result;
     }
-    private static double isZero(double a, double b, double c){
+    private static double isZero(double a, double b){
         return (- b -  Math.sqrt(discriminant)) / 2 * a;
     }
-    private static String isNegative(double a, double b, double c){
+    private static String isNegative(double a, double b){
         double ans1 = - ( b / (2 * a));
         double ans2 = (Math.sqrt(- discriminant)) / (2 * a);
         if((b / (2 * a)) == 0){

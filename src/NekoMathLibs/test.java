@@ -12,5 +12,9 @@ public class test {
         System.out.println();
         Equation.quadEqn(1.0, 0.0, 16.0);
         System.out.println();
+        Equation.quadEqn(1.0, 3.0, 9.0);
+        System.out.println();
+        Equation.quadEqn(1.0, -6.0, 13.0);
+        System.out.println();
     }
 }
