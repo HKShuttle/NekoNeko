@@ -16,7 +16,7 @@ public class test {
         System.out.println();
         Equation.quadEqn(1.0, -6.0, 13.0);
         System.out.println();
-        Equation2 eq1 = new Equation2(1.0, 0.0, 16.0);
+        quadSolver eq1 = new quadSolver(1.0, 0.0, 16.0);
         switch (eq1.ansType){
             case -1 :
                 System.out.println("-------------------------");
