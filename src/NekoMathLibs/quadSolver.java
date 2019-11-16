@@ -1,6 +1,6 @@
 package NekoMathLibs;
 
-public class Equation2 {
+public class quadSolver {
     public double a, b, c;
     public double discriminant;
     public int ansType;
@@ -8,7 +8,7 @@ public class Equation2 {
     public double pAns2;
     public double nAnsRe;
     public double nAnsIm;
-    public Equation2(double _a, double _b, double _c){
+    public quadSolver(double _a, double _b, double _c){
         a = _a;
         b = _b;
         c = _c;
