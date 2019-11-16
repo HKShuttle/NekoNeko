@@ -1,6 +1,6 @@
 package NekoMathLibs;
 
-public class Equation {
+public class EquationTest {
     private static double discriminant;
     public static void quadEqn(double a, double b, double c){
 
