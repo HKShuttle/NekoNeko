@@ -1,4 +1,4 @@
-package Kiyoshi;
+package MyUtil;
 
 import java.util.Random;
 

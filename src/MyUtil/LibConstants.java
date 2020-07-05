@@ -1,4 +1,4 @@
-package Kiyoshi;
+package MyUtil;
 
 class LibConstants {
     static final String EQUAL_ZUNDOKO = "ズンズンズンズンドコ";

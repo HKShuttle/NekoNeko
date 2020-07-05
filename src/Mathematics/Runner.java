@@ -1,4 +1,4 @@
-package Math;
+package Mathematics;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class Runner {
         }
     }
 
-    static String readScan(BufferedReader br) {
+    public static String readScan(BufferedReader br) {
         try {
             return br.readLine();
         } catch (IOException e) {

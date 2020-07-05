@@ -1,4 +1,4 @@
-package Math;
+package Mathematics;
 
 import org.apache.commons.math3.complex.*;
 
