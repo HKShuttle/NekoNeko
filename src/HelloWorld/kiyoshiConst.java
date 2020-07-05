@@ -1,6 +1,6 @@
-package MyUtil;
+package HelloWorld;
 
-class LibConstants {
+class kiyoshiConst {
     static final String EQUAL_ZUNDOKO = "ズンズンズンズンドコ";
     static final String KIYOSHI = "キ・ヨ・シ！";
 

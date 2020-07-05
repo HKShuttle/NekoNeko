@@ -1,8 +1,8 @@
-package MyUtil;
+package HelloWorld;
 
 import java.util.Random;
 
-class Lib {
+class KiyoshiZundoko {
     static void kiyoshi(){
         String zundoko;
         StringBuilder builder = new StringBuilder();
@@ -10,8 +10,8 @@ class Lib {
             builder.append(randomGen(0));
         }
         zundoko = builder.toString();
-        if (zundoko.equals(LibConstants.EQUAL_ZUNDOKO)) {
-            zundoko += LibConstants.KIYOSHI;
+        if (zundoko.equals(kiyoshiConst.EQUAL_ZUNDOKO)) {
+            zundoko += kiyoshiConst.KIYOSHI;
         }
         System.out.println(zundoko);
     }
@@ -19,22 +19,22 @@ class Lib {
     private static String randomGen(int a) {
         if (a == 0) {
             if ((new Random().nextInt(2) == 0)) {
-                return LibConstants.ZUN;
+                return kiyoshiConst.ZUN;
             } else {
-                return LibConstants.DOKO;
+                return kiyoshiConst.DOKO;
             }
         } else {
             switch (new Random().nextInt(5)) {
                 case 0:
-                    return LibConstants.HOT_DOG_1;
+                    return kiyoshiConst.HOT_DOG_1;
                 case 1:
-                    return LibConstants.HOT_DOG_2;
+                    return kiyoshiConst.HOT_DOG_2;
                 case 2:
-                    return LibConstants.HOT_DOG_3;
+                    return kiyoshiConst.HOT_DOG_3;
                 case 3:
-                    return LibConstants.HOT_DOG_4;
+                    return kiyoshiConst.HOT_DOG_4;
                 default:
-                    return LibConstants.HOT_DOG_5;
+                    return kiyoshiConst.HOT_DOG_5;
             }
         }
     }

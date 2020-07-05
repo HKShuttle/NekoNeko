@@ -1,5 +1,7 @@
 package Mathematics;
 
+import MyUtil.QuadraticEqn;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,21 +12,12 @@ public class Runner {
 
         while (true) {
             System.out.print("a=?");
-            double a = Double.parseDouble(readScan(br));
+            double a = Double.parseDouble(MyUtil.Reader.readScan(br));
             System.out.print("b=?");
-            double b = Double.parseDouble(readScan(br));
+            double b = Double.parseDouble(MyUtil.Reader.readScan(br));
             System.out.print("c=?");
-            double c = Double.parseDouble(readScan(br));
+            double c = Double.parseDouble(MyUtil.Reader.readScan(br));
             printAnswer(new QuadraticEqn(a, b, c));
-        }
-    }
-
-    public static String readScan(BufferedReader br) {
-        try {
-            return br.readLine();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-            return "0";
         }
     }
 

@@ -1,4 +1,4 @@
-package Mathematics;
+package MyUtil;
 
 import org.apache.commons.math3.complex.*;
 
@@ -10,7 +10,7 @@ public class QuadraticEqn {
     private final int answerType;
     private final Complex[] answerValue;
 
-    QuadraticEqn(double a, double b, double c) {
+    public QuadraticEqn(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -38,19 +38,19 @@ public class QuadraticEqn {
         }
     }
 
-    Complex[] getAnswerValue() {
+    public Complex[] getAnswerValue() {
         return answerValue;
     }
 
-    double getDiscriminant() {
+    public double getDiscriminant() {
         return discriminant;
     }
 
-    int getAnswerType() {
+    public int getAnswerType() {
         return answerType;
     }
 
-    double getCoefficient(char coefficient) {
+    public double getCoefficient(char coefficient) {
         if (coefficient == 'a') {
             return a;
         }

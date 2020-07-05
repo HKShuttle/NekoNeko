@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         double sum = 0;
         System.out.println("整数を入力してください");
-        int var = Integer.parseInt(Mathematics.Runner.readScan(new BufferedReader(new InputStreamReader(System.in))));
+        int var = Integer.parseInt(Reader.readScan(new BufferedReader(new InputStreamReader(System.in))));
         for (int i = 0; i < var; i++) {
             sum += Math.pow(2, i);
         }
