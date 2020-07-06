@@ -1,9 +1,11 @@
-package MyUtil;
+package HelloWorld;
+
+import MyUtil.Reader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main {
+public class floatTest {
 
     public static void main(String[] args) {
         double sum = 0;

@@ -1,16 +1,14 @@
-package Mathematics;
+package HelloWorld;
 
 import MyUtil.QuadraticEqn;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Runner {
+public class equationTest {
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        while (true) {
             System.out.print("a=?");
             double a = Double.parseDouble(MyUtil.Reader.readScan(br));
             System.out.print("b=?");
@@ -18,7 +16,6 @@ public class Runner {
             System.out.print("c=?");
             double c = Double.parseDouble(MyUtil.Reader.readScan(br));
             printAnswer(new QuadraticEqn(a, b, c));
-        }
     }
 
     static void printAnswer(QuadraticEqn quadraticEqn) {
